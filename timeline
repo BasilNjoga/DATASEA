@@ -1,0 +1,18 @@
+I'm hoping to implement
+
+Database
+Database connection to login and signup pages
+sign in authentiaction
+Web server - flask
+API call to show charts
+Upload for new datasets
+drop down and check boxes for parameters
+parse parameters to backend
+Use parameters in API call to get different graphs
+convert csv dataset to json
+show dataset values in website
+Drop down to choose rows and columns 
+Parse and get improved graphs
+Profile page, display content from database
+log out option
+Password storage option
