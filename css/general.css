@@ -1,0 +1,22 @@
+.navbar {
+    background-color: beige;
+    display: flex;
+    padding: 20px;
+}
+
+.navbar a {
+    list-style: none;
+    text-decoration: none;
+    padding: 30px;
+    text-align: end;
+    color: green;
+}
+
+.navbar a:hover {
+    color: black;
+    font-weight: 500;
+}
+
+.navelements {
+    padding-left: 800px;
+}

@@ -1,3 +1,13 @@
+.navbar {
+    background-color: beige;
+    display: flex;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+body {
+    margin: 0px;
+}
 h1 {
     color: red;
     margin-left: 100px;

@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+}
+
+form {
+    padding: 10px;
+    text-align: center;
+}
+form input{
+    padding: 5px;
+    margin: 10px;
+}
+
+.heading {
+    text-align: center;
+}
