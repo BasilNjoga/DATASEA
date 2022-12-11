@@ -2,6 +2,8 @@
     background-color: beige;
     display: flex;
     padding: 20px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .navbar a {

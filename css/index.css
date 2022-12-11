@@ -9,13 +9,26 @@ body {
     margin: 0px;
 }
 h1 {
-    color: red;
+    color: green;
+    font-style: italic;
+    font-weight: bold;
     margin-left: 100px;
 
 }
 nav{
     display: block;
-    padding-top: 300;
-    padding-left: 300;
+    padding-top: 200;
+    padding-left: 500;
     
+}
+nav button {
+    margin: 20px;
+}
+.navword {
+    text-align: center;
+    padding-left: 400px;
+}
+
+.already {
+    padding-left: 650px;
 }
