@@ -15,10 +15,10 @@ h1 {
     margin-left: 100px;
 
 }
-nav{
+.welcome {
     display: block;
-    padding-top: 200;
-    padding-left: 500;
+    padding-top: 20px;
+    padding-left: 500px;
     
 }
 nav button {
@@ -26,9 +26,15 @@ nav button {
 }
 .navword {
     text-align: center;
-    padding-left: 400px;
+    padding-left: 500px;
 }
 
 .already {
-    padding-left: 650px;
+    padding-left: 700px;
+}
+.mainimage {
+    height: 250px;
+    width: 400px;
+    padding-left:250px;
+    padding-top: 30px;
 }
