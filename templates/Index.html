@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="static/styles/index.css" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css')}}" >
 <title> DATASEA </title>
 </head>
 <body>
@@ -10,14 +10,14 @@
             <h1 class="navword">DATASEA</h1>
             </div>
             <div class="mainimage">
-                <img src="images/896ee926f57de78a81716948d074cf9c.gif" class="mainimage">
+                <img src="{{ url_for('static', filename='images/linechart.gif')}}" class="mainimage">
                 </div>
     <nav class="welcome">
     <h1 >Welcome to DataSea </h1>
-    <a href="templates/visualisation.html"><button>Explore Available Datasets</button></a>
-    <a href="signup.html"><button type="button">Sign up and start today</button></a>
+    <a href="visualise"><button>Explore Available Datasets</button></a>
+    <a href="signup"><button type="button">Sign up and start today</button></a>
     </nav>
-    <a class="already" href="login.html">Already a user, login</a>
+    <a class="already" href="login">Already a user, login</a>
     <a href="login.html"> </a>
 </body>
 
