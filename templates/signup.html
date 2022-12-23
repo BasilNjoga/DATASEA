@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sign UP</title>
+{% extends "base.html" %}
+{% block title %} Sign Up {% endblock %}
+
+{% block mycss %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/general.css')}}" >
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/login.css')}}" >
-    </head>
-    <body>
-        <header>
-            <div class="navbar">
-                <div class="navelements">
-            <a href="/">Home</a>
-            <a href="">Settings</a>
-            <a href="">check</a>
-                </div>
-                </div>
-        </header>
+{% endblock %}
+
+{% block content %}
         <div class="heading">
         <h1>Sign Up and Start Today</h1>
         </div>
@@ -29,6 +21,4 @@
             <input type="password" id="fpassword" name="fpassword" required><br>
             <input type="submit" value="Submit">
         </form>
-    </body>
-    
-</html>
+{% endblock %}

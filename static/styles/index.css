@@ -1,10 +1,3 @@
-.navbar {
-    background-color: beige;
-    display: flex;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 body {
     margin: 0px;
 }
@@ -30,7 +23,7 @@ nav button {
 }
 
 .already {
-    padding-left: 700px;
+    padding-left: 650px;
 }
 .mainimage {
     height: 250px;

@@ -1,24 +1,17 @@
-<DOCTYPYE html>
-<html>
+{% extends "base.html" %}
 
-<head>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css')}}" >
-<title> DATASEA </title>
-</head>
-<body>
-        <div class="navbar">
-            <h1 class="navword">DATASEA</h1>
-            </div>
-            <div class="mainimage">
-                <img src="{{ url_for('static', filename='images/linechart.gif')}}" class="mainimage">
-                </div>
+{% block title %}DATASEA{% endblock %}
+{% block mycss %} <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css')}}" > {% endblock %}
+
+{% block content %}
+    <div class="mainimage">
+        <img src="{{ url_for('static', filename='images/linechart.gif')}}" class="mainimage">
+    </div>
     <nav class="welcome">
-    <h1 >Welcome to DataSea </h1>
+        <h1 >Welcome to DataSea </h1>
     <a href="visualise"><button>Explore Available Datasets</button></a>
     <a href="signup"><button type="button">Sign up and start today</button></a>
     </nav>
     <a class="already" href="login">Already a user, login</a>
     <a href="login.html"> </a>
-</body>
-
-</html>
+{% endblock %}

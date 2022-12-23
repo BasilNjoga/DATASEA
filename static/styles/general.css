@@ -1,22 +1,26 @@
+body {
+    margin: 0px;
+}
 .navbar {
     background-color: beige;
     display: flex;
-    padding: 20px;
+    padding: 10px;
     font-style: italic;
     font-weight: bold;
+    font-size: large;
 }
 
 .navbar a {
     list-style: none;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 30px;
     text-align: end;
     color: green;
 }
 
 .navbar a:hover {
     color: black;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .navelements {

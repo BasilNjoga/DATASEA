@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Log in</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/general.css')}}" >
+{% extends "base.html" %}
+{% block title %} Log in {% endblock %}
+{% block mycss %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/login.css')}}" >
-    </head>
-    <body>
-        <header>
-            <div class="navbar">
-                <div class="navelements">
-            <a href="/">Home</a>
-            <a href="">Settings</a>
-            <a href="">check</a>
-                </div>
-                </div>
-        </header>
+{% endblock %}
+
+{% block content %}
         <div class="heading">
         <h1>Login page</h1>
         </div>
@@ -25,6 +15,4 @@
             <input type="password" id="fpassword" name="fpassword" required><br>
             <input type="submit" value="login">
         </form>
-    </body>
-    
-</html>
+{% endblock %}
