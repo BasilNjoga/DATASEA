@@ -27,7 +27,8 @@ nav button {
 }
 .mainimage {
     height: 250px;
-    width: 400px;
-    padding-left:250px;
+    width: 650px;
+    padding-bottom: 10px;
+    padding-left:310px;
     padding-top: 30px;
 }

@@ -13,9 +13,10 @@ def index():
 
 @app.route("/login")
 def login():
+    email = None
     return render_template("login.html")
 
-@app.route("/signup")
+@app.route("/signup", methods=["POST", "GET"])
 def signup():
     return render_template("signup.html")
 
