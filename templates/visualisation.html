@@ -3,7 +3,19 @@
 
 {% block mycss %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/general.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/visualisation.css')}}">
 {% endblock %}
 {% block content %}
         <h1>Check me out</h1>
-{% endblock %}
+        <nav class="graphs">
+        <div>
+        <img src="https://quickchart.io/chart?c={type:%27bar%27,data:{labels:[2012,2013,2014,2015,2016],datasets:[{label:%27Users%27,data:[120,60,50,180,120]}]}}">
+        <img src="https://quickchart.io/chart?c={type:'line',data:{labels:['January','February','March','April','May'],datasets:[{label:'Dogs',data:[50,60,70,180,190],fill:false,borderColor:'blue'},{label:'Cats',data:[100,200,300,400,500],fill:false,borderColor:'green'}]}}">
+        <h3>users against data</h3>
+        </div>
+        <div>
+        <img src="https://quickchart.io/chart?w=800&h=400&v=2.9.4&c=%7B%0A%20%20type%3A%20%27pie%27%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20Show%20a%20bar%20chart%0A%20%20data%3A%20%7B%0A%20%20%20%20labels%3A%20%5B2012%2C%202013%2C%202014%2C%202015%2C%202016%5D%2C%20%20%20%2F%2F%20Set%20X-axis%20labels%0A%20%20%20%20datasets%3A%20%5B%7B%0A%20%20%20%20%20%20label%3A%20%27Users%27%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20Create%20the%20%27Users%27%20dataset%0A%20%20%20%20%20%20data%3A%20%5B120%2C%2060%2C%2050%2C%20180%2C%20120%5D%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20Add%20data%20to%20the%20chart%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D">
+        <h3> Pie chart representation </h3>
+        </div>
+        </nav>
+        {% endblock %}

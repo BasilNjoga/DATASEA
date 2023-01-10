@@ -11,8 +11,12 @@ h1 {
 .welcome {
     display: block;
     padding-top: 20px;
-    padding-left: 500px;
+    padding-left: 450px;
     
+}
+.welcome h1 {
+    padding-left: 0px;
+    margin-left: 50px;
 }
 nav button {
     margin: 20px;
@@ -29,6 +33,6 @@ nav button {
     height: 250px;
     width: 650px;
     padding-bottom: 10px;
-    padding-left:310px;
+    padding-left:250px;
     padding-top: 30px;
 }

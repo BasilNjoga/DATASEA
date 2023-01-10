@@ -8,11 +8,20 @@
         <div class="heading">
         <h1>Login page</h1>
         </div>
-        <form>
-            <label for ="femailaddress">Email Adress</label>
-            <input type="text" id="femailaddress" name="femailaddress" required><br>
-            <label for="fpassword">Passwoord</label>
+        <div class="message">
+        {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                        {% for msg in messages %}
+                                <p>{{msg}}</p>
+                        {% endfor %}
+                {% endif %}
+        {% endwith %}
+        </div>
+        <form action="#" method="post">
+            <label for ="fname">username</label>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="fpassword">Password</label>
             <input type="password" id="fpassword" name="fpassword" required><br>
-            <input type="submit" value="login">
+            <input type="submit" value="login"> 
         </form>
 {% endblock %}
