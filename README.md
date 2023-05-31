@@ -1,2 +1,2 @@
 # DATASEA
-Repository for my ALX portfolio project
+A data visualization and presentation application with an interactive dashboard
