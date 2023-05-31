@@ -14,14 +14,6 @@ app.permanent_session_lifetime = timedelta(minutes=5)
 
 db = SQLAlchemy(app)
 
-class users(db.Model):
-    _id = db.Column("id", db.Integer, primary_key=True)
-    name = db.Column(db.String(100))
-    email = db.Column(db.String(100))
-    
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
 
 
 @app.route("/")
@@ -31,18 +23,6 @@ def index():
 @app.route("/login", methods=["POST", "GET"])
 def login():
     if request.method == "POST":
-        session.permanent = True
-        user = request.form["fname"]
-        session["user"] = user
-
-        found_user = users.query.filter_by(name=user).first() 
-        if found_user:
-            session["email"] = found_user.email
-        else:
-            usr = users(user, "")
-            db.session.add(usr)
-            db.session.commit()
-
         return redirect(url_for("user"))
     else:
         if "user" in session:
@@ -74,5 +54,4 @@ def visualisation():
     return render_template("visualisation.html")
 
 if __name__ == "__main__":
-    #db.create_all()
     app.run(debug=True, host="0.0.0.0", port=80)
